@@ -1,0 +1,182 @@
+/* font-awesome 字体icon*/
+@import "https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+/* 重置样式，清除浏览器默认样式 */
+body { 
+    font: 14px "Microsoft YaHei", Helvetica, sans-serif;
+    font-style: normal; 
+    font-weight: normal; 
+}
+* { margin: 0; padding: 0; }
+i,em,strong,h1,h2,h3,h4,h5,h6{font-style: normal;font-weight: normal;}
+table { border-collapse: collapse; border-spacing: 0; width: 100%; }
+th,td{border-bottom: 1px solid #ddd;padding: 5px;}
+ol li,ul li { list-style: none; }
+a { color: #666; text-decoration: none; }
+a:hover { color: #666; }
+img { border: none; }
+input[type="text"],
+input[type="password"]{ outline: none;border: 1px solid #ddd; }
+textarea { outline: none; overflow: auto; resize: none;border: 1px solid #ddd;  }
+button,input[type="button"],input[type="submit"] { cursor: pointer;}
+select{ outline: none;cursor: pointer;border: 1px solid #ddd;}
+input[type="button"],input[type="submit"],button{background: transparent;border: none;}
+input[type="button"],input[type="submit"],button:focus{ border: none;outline: none;}
+/* 全局共用样式，以 g- 开头，使用率较高的样式 */
+/* 浮动部分 */
+.g-fl { float: left; }
+.g-fr { float: right; }
+.g-row::after,.g-cb::after { display: block; clear: both; content: ""; }
+.g-cb { zoom: 1; }
+.g-cb1 { clear: both;}
+
+/* 字体部分 */
+.g-ti { overflow: hidden; text-indent: -30000px; }
+.g-tal { text-align: left; }
+.g-tac { text-align: center; }
+.g-tar { text-align: right; }
+.g-taj { text-align: justify; text-justify: inter-ideograph; }
+.g-nti { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+.g-fw1{ font-weight: 100; }
+.g-fw6{ font-weight: 600; }
+.g-fwb{ font-weight: bolder; }
+
+/* 布局部分 */
+.g-mg-auto { margin: 0 auto; }
+.g-con10 { width: 1000px; }
+.g-con11 { width: 1100px; }
+.g-con12 { width: 1200px; }
+.g-con13 { width: 1300px; }
+.g-con14 { width: 1400px; }
+.g-row{ zoom: 1;}
+.g-col-1 { width: 4.166666667%; box-sizing: border-box;float: left; }
+.g-col-2 { width: 8.333333333%; box-sizing: border-box;float: left; }
+.g-col-3 { width: 12.5%; box-sizing: border-box;float: left; }
+.g-col-4 { width: 16.66666667%; box-sizing: border-box;float: left; }
+.g-col-5 { width: 20.833333333%; box-sizing: border-box;float: left; }
+.g-col-6 { width: 25%; box-sizing: border-box;float: left; }
+.g-col-7 { width: 29.166666667%; box-sizing: border-box;float: left; }
+.g-col-8 { width: 33.33333333%; box-sizing: border-box;float: left; }
+.g-col-9 { width: 37.5%; box-sizing: border-box;float: left; }
+.g-col-10 { width: 41.66666667%; box-sizing: border-box;float: left; }
+.g-col-11 { width: 45.833333333%; box-sizing: border-box;float: left; }
+.g-col-12 { width: 50%; box-sizing: border-box;float: left; }
+.g-col-13 { width: 54.166666667%; box-sizing: border-box;float: left; }
+.g-col-14 { width: 58.33333333%; box-sizing: border-box;float: left; }
+.g-col-15 { width: 62.5%; box-sizing: border-box;float: left; }
+.g-col-16 { width: 66.66666667%; box-sizing: border-box;float: left; }
+.g-col-17 { width: 70.833333333%; box-sizing: border-box;float: left; }
+.g-col-18 { width: 75%; box-sizing: border-box;float: left; }
+.g-col-19 { width: 79.166666667%; box-sizing: border-box;float: left; }
+.g-col-20 { width: 83.33333333%; box-sizing: border-box;float: left; }
+.g-col-21 { width: 87.5%; box-sizing: border-box;float: left; }
+.g-col-22 { width: 91.66666667%; box-sizing: border-box;float: left; }
+.g-col-23 { width: 95.833333333%; box-sizing: border-box;float: left; }
+.g-col-24 { width: 100%; box-sizing: border-box;float: left; }
+
+
+/* 弹性盒子 */
+.g-dsf{ display: flex; } 
+.g-fdr {flex-direction: row;}   /* 水平左到右 */
+.g-jcc{ justify-content: center; }  /* 水平居中 */
+.g-jcsb{ justify-content: space-between; }   /* 平均分布-左右没空 */
+.g-jcsa{ justify-content: space-around; }    /* 平均分布-左右有空 */
+.g-jcfe{ justify-content: flex-end; }  /* 水平-尾对齐 */
+.g-aic{ align-items:center; }   /* 垂直居中 */
+.g-fdc{flex-direction: column;} /* 垂直排列 */
+.g-fww{ flex-wrap:wrap;}  
+.g-flex{ flex:1; }    /* 内容大小 */  
+
+/* 元素转换 */
+.g-db{display:block;}
+.g-dib{display:inline-block;}
+.g-dtr{display: table-row;}
+.g-bb{box-sizing: border-box;}
+
+
+/* 间距部分 */
+.g-mgl-15{ margin-left: 15px;}
+.g-mgr-15{ margin-right: 15px;}
+.g-mgt-15{ margin-top: 15px;}
+.g-mgb-15{ margin-bottom: 15px;}
+.g-mg-15{ margin: 15px;}
+.g-pdl-15{ padding-left: 15px;}
+.g-pdr-15{ padding-right: 15px;}
+.g-pdt-15{ padding-top: 15px;}
+.g-pdb-15{ padding-bottom: 15px;}
+.g-pd-15{ padding: 15px;}
+
+/* 定位 */
+.g-pr { position: relative; }
+.g-pa { position: absolute; }
+.g-tf50{ position: absolute; top: 50%; left: 50%;  transform: translate(-50%,-50%); }
+
+/* 显示和隐藏 */
+.g-show{ display: block; }
+.g-hide { display: none; }
+
+
+/* 宽度和高度 */
+.g-width{ width: 100%; }
+.g-height { height: 100%; }
+.g-wh{ width: 100%; height: 100%;}
+.g-width50{ width: 50%; }
+.g-height50 { height: 50%; }
+.g-wh50{ width: 50%; height: 50%;}
+
+
+/* 模糊投影 */
+.g-blur-box-sh{
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1)
+}
+/* 清晰投影 */
+.g-clear-box-sh{
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.05);
+}
+
+/* 小圆角 */
+.g-bor-ra4{
+    border-radius: 4px;
+}
+/* 半圆角 */
+.g-bor-ra30{
+    border-radius: 30px;
+}
+
+/* 其他 */
+.g-csp { cursor: pointer; }
+.g-oh { overflow: hidden; }
+
+
+
+/* 媒体查询 */
+@media (max-width: 767px) {  
+    /* 在小于768像素的屏幕里,这里的样式才生效 */  
+}  
+@media (min-width: 768px) and (max-width: 991px) {  
+    /* 在768和991像素之间的屏幕里,这里的样式才生效 */  
+}  
+@media (min-width: 992px) and (max-width: 1199px) {  
+    /* 在992和1199像素之间的屏幕里,这里的样式才生效 */  
+}  
+@media (min-width: 1200px) {  
+    /* 在大于1200像素的屏幕里,这里的样式才生效 */  
+}
+
+
+/* css3 滚动条样式 */
+.g-scroll {
+    overflow: auto;
+}
+.g-scroll::-webkit-scrollbar {
+    width: 6px;
+    height: 8px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+.g-scroll::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+
